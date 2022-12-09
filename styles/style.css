@@ -96,12 +96,16 @@ a {
     margin-top: 5px;
 }
 
+.logo:hover {
+    filter: invert(98%) sepia(8%) saturate(847%) hue-rotate(4deg) brightness(93%) contrast(92%);
+}
+
 .social-icons {
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 55px;
+    height: 53px;
     width: 250px;
     right: 0;
 }
@@ -110,6 +114,7 @@ a {
     overflow: hidden;
     height: 100%;
     width: 100%;
+    border-radius: 50%;
 }
 
 .social-icons a:hover {
