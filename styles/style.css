@@ -47,6 +47,8 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    column-count: 3;
+    column-fill: balance;
 }
 
 nav ul li {
@@ -287,3 +289,79 @@ td {
 }
 
 /* Diskografia */
+.albums-lst {
+    left: 300px;
+    margin-top: 20px;
+    margin-right: 500px;
+}
+
+.albums-lst ul {
+    list-style: circle;
+    list-style-position: inside;
+    overflow: hidden;
+}
+
+.albums-lst li {
+    font-size: 24px;
+    float: left;
+    width: 50%;
+}
+
+.albums-lst li a {
+    color: var(--color-black);
+    font-size: 20px;
+}
+
+.albums-lst li a:hover {
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+
+.spotify-embed {
+    margin: 20px 100px 0px;
+    overflow: hidden;
+}
+
+.spotify-embed iframe {
+    overflow: hidden;
+}
+
+#top-icn {
+    position: fixed;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    border: solid 2px var(--color-black);
+    border-radius: 50%;
+    right: 0;
+    bottom: 45px;
+    margin: 5px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 50%;
+}
+
+#top-icn i {
+    align-self: center;
+    vertical-align: middle;
+    overflow: hidden;
+    text-align: center;
+    height: 55px;
+    padding-top: 25px;
+    width: 100%;
+    transition: var(--transition-primary);
+}
+
+#top-icn i:hover {
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+
+h3 {
+    text-align: center;
+    color: var(--color-secondary);
+    font-size: 25px;
+    font-style: italic;
+    margin: 10px;
+}
