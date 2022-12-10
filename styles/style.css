@@ -5,7 +5,7 @@
     overflow: auto;
     position: relative;
     box-sizing: border-box;
-    /* outline: red dashed 2px; */
+    outline: red dashed 2px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
@@ -16,6 +16,7 @@
     --color-secondary: rgb(166, 11, 180);
     --color-black: black;
     --color-white: white;
+    --color-grey: rgb(100, 100, 100);
     --transition-primary: all 0.5s ease-in-out;
 
 }
@@ -327,7 +328,7 @@ td {
     overflow: hidden;
 }
 
-#top-icn {
+.top-disc {
     position: fixed;
     overflow: hidden;
     height: 50px;
@@ -343,7 +344,7 @@ td {
     border-radius: 50%;
 }
 
-#top-icn i {
+.top-disc i {
     align-self: center;
     vertical-align: middle;
     overflow: hidden;
@@ -354,7 +355,7 @@ td {
     transition: var(--transition-primary);
 }
 
-#top-icn i:hover {
+.top-disc i:hover {
     color: var(--color-secondary);
     background-color: var(--color-primary);
 }
@@ -365,4 +366,16 @@ h3 {
     font-size: 25px;
     font-style: italic;
     margin: 10px;
+}
+
+/* Concerts */
+.concerts p {
+    text-align: justify;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 20px;
+    padding: 5px;
+    border: solid 4px var(--color-secondary);
+    border-radius: 5px;
+    box-shadow: -5px 5px 5px 1px var(--color-grey);
 }
