@@ -5,7 +5,7 @@
     overflow: auto;
     position: relative;
     box-sizing: border-box;
-    outline: red dashed 2px;
+    /* outline: red dashed 1px; */
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
@@ -17,6 +17,7 @@
     --color-black: black;
     --color-white: white;
     --color-grey: rgb(100, 100, 100);
+    --color-lightgrey: lightgray;
     --transition-primary: all 0.5s ease-in-out;
 
 }
@@ -378,4 +379,42 @@ h3 {
     border: solid 4px var(--color-secondary);
     border-radius: 5px;
     box-shadow: -5px 5px 5px 1px var(--color-grey);
+}
+
+.concerts-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.concerts-tbl {
+    border: none;
+}
+
+.concerts-tbl table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.concerts-tbl th {
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+}
+
+.concerts-tbl td {
+    text-align: left;
+    border: none;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+.concerts-tbl tr:nth-child(even) {
+    background-color: var(--color-lightgrey);
+}
+
+.concerts-tbl tr:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
 }
