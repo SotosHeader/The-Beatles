@@ -379,16 +379,18 @@ h3 {
     border: solid 4px var(--color-secondary);
     border-radius: 5px;
     box-shadow: -5px 5px 5px 1px var(--color-grey);
+    margin-bottom: 60px;
 }
 
 .concerts-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+    margin-bottom: 10px;
 }
 
 .concerts-tbl {
     border: none;
+    align-self: center;
 }
 
 .concerts-tbl table {
@@ -417,4 +419,25 @@ h3 {
 .concerts-tbl tr:hover {
     background-color: var(--color-secondary);
     color: var(--color-white);
+}
+
+.left-sect,.right-sect{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left-sect,.right-sect,.concerts-tbl{
+    padding: 15px;
+}
+
+.concerts img{
+    width: 100%;
+    height: auto;
+    height: 400px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: -5px 5px 5px 1px var(--color-grey);
 }
