@@ -455,12 +455,16 @@ h3 {
 }
 
 .concerts img {
-    width: 100%;
-    height: auto;
-    height: 400px;
+    width: 400px;
+    height: 350px;
     border-radius: 30px;
     margin-bottom: 20px;
     box-shadow: -5px 5px 5px 1px var(--color-grey);
+}
+
+.concerts img:hover {
+    height: 400px;
+    width: 450px;
 }
 
 /* Contact */
@@ -482,21 +486,32 @@ h3 {
 .reference {
     text-align: center;
     border-collapse: collapse;
-    border: none;
+    border-style: hidden;
     background-color: var(--color-lightgrey);
+    border-radius: 30px;
+}
 
+.reference tr {
+    border-collapse: collapse;
+    border: solid 1px var(--color-black);
 }
 
 .reference a {
     color: var(--color-secondary);
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .reference th,
 td {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     padding: 4px;
+    border: none;
+}
+
+.reference td {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .reference a:hover {
@@ -506,15 +521,24 @@ td {
 .contact-tbl {
     text-align: center;
     border-collapse: collapse;
-    border: none;
+    border-style: hidden;
     background-color: var(--color-lightgrey);
+    border-radius: 30px;
+}
+
+.contact-tbl tr {
+    border: 1px solid var(--color-black);
+    border-collapse: collapse;
 }
 
 .contact-tbl th,
 td {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     padding: 4px;
+    border: 2px dashed var(--color-secondary);
+    border-collapse: collapse;
+    padding-right: 7px;
 }
 
 .name-email {
